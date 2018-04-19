@@ -1,6 +1,0 @@
-// Objetos
-
-object robo {
-//teste
-
-}
