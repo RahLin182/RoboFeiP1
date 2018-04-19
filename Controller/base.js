@@ -10,8 +10,8 @@ class Robo{
 
 
 //Validar se é possível instanciar classe Robo
-function validaRobo(){
-  var robo = new Robo(10, 20, 2, 2.6);
+function validaRobo(x){
+  var robo = new Robo(x, y, a, vm);
   var div = document.getElementById("div1");
 
   div.innerHTML = "Robo X: " +robo.x+ "<br>" +
@@ -22,6 +22,4 @@ function validaRobo(){
 }
 
 //Definir Coordenadas para qual robo deve se locomover
-function defineCoo(){
-
-}
+function defineCoo(robo, posicoes){}
