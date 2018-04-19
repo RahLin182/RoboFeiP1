@@ -22,4 +22,17 @@ function validaRobo(x){
 }
 
 //Definir Coordenadas para qual robo deve se locomover
-function defineCoo(robo, posicoes){}
+function defineCoo(robo, posicoes){
+
+  //Posição inicial do Robo
+  var xr = robo.x;
+  var yr = robo.y;
+
+  //Tamanho do array (array com as posicoes da bola)
+  var size = posicoes.length;
+  var i=0;
+  for(i; i<size; i++){
+    //formula da distancia entre robo e bola
+  }
+
+}
