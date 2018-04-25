@@ -1,0 +1,32 @@
+<%- contentFor('body') %>
+<canvas class="line-chart"></canvas>
+<canvas id="campo" width="900" height="600"></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <script>
+
+            var ctx = document.getElementsByClassName("line-chart");
+            var CampoFutebol = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Fev", "Mar"],
+                    datasets: [{
+                        label: "Taxa de Cliques",
+                        data: [1, 2, 3, 4, 5]
+                    }]
+                }
+
+            });
+
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Jan", "Fev", "Mar"],
+                    datasets: [{
+                        label: "Taxa de Cliques",
+                        data: [1, 2, 3, 4, 5]
+                    }]
+                }
+
+            });
+        </script>
