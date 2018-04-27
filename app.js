@@ -16,3 +16,8 @@ app.get('/', (req, res) => {
 app.use(express.static(__dirname + '/public'))
 app.listen(port)
 console.log('Servidor iniciado em http://localhost:' + port)
+
+
+
+// Distancia entre dois pontos
+// dist = sqrt( pow (x2 - x1, 2) + pow (y2 - y1, 2)); em C
