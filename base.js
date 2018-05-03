@@ -1,4 +1,3 @@
-
 class Robo{
   constructor(x, y, a, vm) {
   this.x = x;
@@ -10,7 +9,7 @@ class Robo{
 
 
 //Validar se é possível instanciar classe Robo
-function validaRobo(x){
+function validaRobo(){
   var robo = new Robo(x, y, a, vm);
   var div = document.getElementById("div1");
 
@@ -22,17 +21,31 @@ function validaRobo(x){
 }
 
 //Definir Coordenadas para qual robo deve se locomover
-function defineCoo(robo, posicoes){
+function defineCoo(robo, posicoesX, posicoesY, tempos){
 
   //Posição inicial do Robo
   var xr = robo.x;
   var yr = robo.y;
+  var a = robo.a;
+  var vm = robo.vm;
 
   //Tamanho do array (array com as posicoes da bola)
-  var size = posicoes.length;
+  var size = tempos.length;
   var i=0;
   for(i; i<size; i++){
-    //formula da distancia entre robo e bola
+    var xb = posicoesX[i]; //x da bola
+    var yb = posicoesY[i]; //y da bola
+    var t = tempos[i]; //tempo
+
+    var delta = Math.pow( (xr-xb),2 ) + Math.pow( (yr-yb),2 );
+    var dis = Math.sqrt(delta);
+
+    var locomocao = 0;
+
+    if (locomocao <= t){
+      var pos = [xb,yb];
+      return pos;
+    }
   }
 
 }
