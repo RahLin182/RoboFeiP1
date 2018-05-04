@@ -1,11 +1,7 @@
-fs = require('fs')
-
-fs.readFile('z.txt', 'utf8', function (err,data) {
-    if (err) {
-      return console.log(err);
-    }
-    console.log(data);
-  });
+var fs = require('fs');
+ 
+var contents = fs.readFileSync('z.txt', 'utf8').split("\n");
+console.log(contents);
 
 
 
